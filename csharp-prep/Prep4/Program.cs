@@ -33,6 +33,7 @@ class Program
             }
         }
         double average = numbers.Average();
+        // Second way average = (float(sum))/numbers.Count();
         numbers.Sort();
         Console.WriteLine($"The sum is: {sum}");
         Console.WriteLine($"The average is: {average}");
