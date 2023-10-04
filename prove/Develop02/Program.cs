@@ -12,6 +12,7 @@ class Program
             Entry myEntry = new Entry();
             Prompt myPrompt = new Prompt();
             Console.WriteLine("Please select one of the following choices:");
+
             // MAIN MENU
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
@@ -42,7 +43,6 @@ class Program
                 Console.Write("Please enter the name of the file txt: ");
                 myJournal._filename = Console.ReadLine();
                 myJournal.LoadFromFile();
-                Console.WriteLine($"The file {myJournal._filename} was loaded successfully");
             }
             else if (choice == "4")
             {
@@ -50,7 +50,6 @@ class Program
                 Console.Write("Please enter the name of the file txt: ");
                 myJournal._filename  = Console.ReadLine();
                 myJournal.SaveToFile();
-                Console.WriteLine($"The file {myJournal._filename} was saved successfully");
             }
             else if (choice == "5")
             {

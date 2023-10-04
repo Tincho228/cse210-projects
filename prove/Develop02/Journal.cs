@@ -22,15 +22,20 @@ public class Journal {
     }
     public void LoadFromFile()
     {
-        string[] lines = System.IO.File.ReadAllLines(_filename);
-        foreach (string line in lines)
-        {
-            Entry myEntry = new Entry();
-            string[] parts = line.Split(",");
-            myEntry._date = parts[0];
-            myEntry._prompt = parts[1];
-            myEntry._response = parts[2];
-            _entries.Add(myEntry);
+        if(File.Exists(_filename)){
+            string[] lines = System.IO.File.ReadAllLines(_filename);
+            foreach (string line in lines)
+            {
+                Entry myEntry = new Entry();
+                string[] parts = line.Split(",");
+                myEntry._date = parts[0];
+                myEntry._prompt = parts[1];
+                myEntry._response = parts[2];
+                _entries.Add(myEntry);
+            }
+        }
+        else {
+            Console.WriteLine($"File name {_filename} does not exist");
         }
     }
 }
