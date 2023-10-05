@@ -11,7 +11,7 @@ public class Prompt {
         _prompts.Add("What are you grateful for? ");
         _prompts.Add("Any reflexion or personal revelation? ");
         _prompts.Add("What things you want to improve? ");
-        _prompts.Add("What are you grateful for? ");
+        _prompts.Add("Did something special happen today ");
         _prompts.Add("Any personal new goals today. ");
     }
     public string PromptGenerator()
