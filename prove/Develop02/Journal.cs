@@ -10,6 +10,7 @@ public class Journal {
             entry.DisplayEntry();
         }
     }
+
     public void SaveToFile()
     {
         using (StreamWriter outputFile = new StreamWriter(_filename))
@@ -20,6 +21,7 @@ public class Journal {
             }
         }
     }
+    
     public void LoadFromFile()
     {
         if(File.Exists(_filename)){

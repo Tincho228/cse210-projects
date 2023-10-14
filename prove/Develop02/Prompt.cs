@@ -14,6 +14,7 @@ public class Prompt {
         _prompts.Add("Did something special happen today ");
         _prompts.Add("Any personal new goals today. ");
     }
+    
     public string PromptGenerator()
     {
         Random random = new Random();

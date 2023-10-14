@@ -7,4 +7,5 @@ public class Entry {
     {
         Console.WriteLine($"Date: {_date} - Prompt: {_prompt} - Response: {_response}");
     }
+    
 }
