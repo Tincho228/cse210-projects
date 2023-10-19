@@ -1,9 +1,27 @@
 using System;
+using System.Security;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Console.Clear();
+        Scripture myScripture = new Scripture();
+        myScripture.GetRenderedScripture();
+        string userInput = "no";
+        while (userInput != "quit"){
+            Console.WriteLine("Press enter to continue or type 'quit' to finish:");
+            userInput = Console.ReadLine();
+            if(myScripture.CountVisibleWords() == 0)
+            {
+                userInput = "quit";
+            }
+            else
+            {    
+                myScripture.SetHideWords();
+                Console.Clear();
+                myScripture.GetRenderedScripture();
+            }
+        }
     }
 }
