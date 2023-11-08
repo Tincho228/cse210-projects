@@ -47,5 +47,5 @@ class Program
 
 // Stretch requirements:
 // 1 - I created a class called Menu that display all the menu options.
-// 2 - The ActivityManager class holds a list of Activity classes.  
+// 2 - The ActivityManager class holds a list of Activity classes.
 // 3 - All the activity name and description are loaded from file.
