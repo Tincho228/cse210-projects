@@ -1,0 +1,5 @@
+90
+Simple:s3/d3/10/True
+Eternal:e1/d1/30/False/1
+Checklist:c1/d3/25/False/2/100/3
+Simple:give a talk/5 minutes talk/50/False
