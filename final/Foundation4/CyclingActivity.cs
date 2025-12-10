@@ -13,7 +13,6 @@ public class CyclingActivity:Activity
         _distance = _speed * _length / 60; 
         return base.GetDistance();
     }
-
     public override double GetSpeed()
     {
         return _speed;
